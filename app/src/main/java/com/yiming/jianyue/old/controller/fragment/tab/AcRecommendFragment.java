@@ -14,6 +14,8 @@ import com.yiming.jianyue.old.utils.common.GlobalUtils;
 import com.yiming.jianyue.old.utils.common.ViewUtils;
 import com.yiming.jianyue.old.view.adapter.recyclerview.AcRecommendRvAdapter;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -161,6 +163,7 @@ public class AcRecommendFragment extends BaseFragment {
             //首页横幅
             Call<AcReBanner> call = acRecommend.onAcReBannerResult(AcApi.buildAcReBannerUrl());
             call.enqueue(new Callback<AcReBanner>() {
+                @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
                 @Override
                 public void onResponse(Call<AcReBanner> call, Response<AcReBanner> response) {
                     AcReBanner acReBanner = response.body();
