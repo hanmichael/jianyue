@@ -32,7 +32,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".controller.activity.MainActivity"
+            android:name=".old.controller.activity.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,22 +64,22 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <activity
-            android:name=".controller.activity.WebviewActivity"
+            android:name=".old.controller.activity.WebviewActivity"
             android:label="@string/title_activity_scrolling"/>
-        <activity android:name=".controller.activity.weixin.WeiXinActivity"/>
-        <activity android:name=".controller.activity.xiaohua.XiaoHuaActivity"/>
+        <activity android:name=".old.controller.activity.weixin.WeiXinActivity"/>
+        <activity android:name=".old.controller.activity.xiaohua.XiaoHuaActivity"/>
 
         <activity
-            android:name=".controller.activity.acfun.AcPartitionActivity">
+            android:name=".old.controller.activity.acfun.AcPartitionActivity">
         </activity>
 
         <activity
-            android:name=".controller.activity.acfun.AcContentActivity"
+            android:name=".old.controller.activity.acfun.AcContentActivity"
             android:theme="@style/TranslucentStatusTheme">
         </activity>
 
         <activity
-            android:name=".controller.activity.video.VideoPlayActivity"
+            android:name=".old.controller.activity.video.VideoPlayActivity"
             android:configChanges="orientation|keyboardHidden"
 
             android:screenOrientation="landscape">
@@ -88,11 +88,11 @@
         </activity>
 
         <activity
-            android:name=".controller.activity.acfun.DownLoadActivity">
+            android:name=".old.controller.activity.acfun.DownLoadActivity">
         </activity>
 
         <meta-data
-            android:name="com.yiming.jianyue.model.config.GlideConfiguration"
+            android:name="com.yiming.jianyue.old.model.config.GlideConfiguration"
             android:value="GlideModule" />
         <!-- 可选-->
         <activity android:name="com.pgyersdk.activity.FeedbackActivity"/>

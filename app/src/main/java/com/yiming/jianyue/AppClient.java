@@ -1,13 +1,13 @@
 package com.yiming.jianyue;
 
-import android.app.Application;
-import android.content.Context;
-
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.pgyersdk.crash.PgyCrashManager;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
-import com.yiming.jianyue.model.config.FrescoConfig;
+import com.yiming.jianyue.old.model.config.FrescoConfig;
+
+import android.app.Application;
+import android.content.Context;
 
 /**
  * Created by wengyiming on 2015/12/14.
